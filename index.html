@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>velatz — writing</title>
+<meta name="description" content="Notes on reverse engineering &amp; software protection for Java/.NET/native — mostly on things that aren&#x27;t well documented elsewhere. I care about how systems resist — and where they dont.">
+<meta name="author" content="velatz">
+<meta property="og:title" content="velatz — writing">
+<meta property="og:description" content="Notes on reverse engineering &amp; software protection for Java/.NET/native — mostly on things that aren&#x27;t well documented elsewhere. I care about how systems resist — and where they dont.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="velatz">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://velatz.dev/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "velatz", "description": "Notes on reverse engineering & software protection for Java/.NET/native — mostly on things that aren't well documented elsewhere. I care about how systems resist — and where they dont.", "url": "https://velatz.dev", "author": {"@type": "Person", "name": "velatz"}}</script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="bf3e1bd8-2b15-4b92-bda8-f8f80b71a519"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <nav class="site-nav">
+      <a class="brand" href="index.html">
+        <img class="avatar" src="avatar.png" alt="velatz"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+        <span class="mark" style="display:none">s</span>
+        velatz.dev
+      </a>
+      <div class="socials">
+        <a class="nav-link" href="index.html">writing</a>
+        <a class="nav-link" href="https://github.com/velatz" aria-label="GitHub"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a><a class="nav-link" href="https://x.com/velatzdev" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>x</span></a><a class="nav-link" href="https://reddit.com/user/velatz" aria-label="Reddit"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.74c.69 0 1.25.56 1.25 1.25a1.25 1.25 0 0 1-2.5.06l-2.6-.55-.8 3.75c1.83.06 3.48.66 4.68 1.62.34-.31.79-.5 1.28-.5.68 0 1.24.56 1.24 1.25 0 .5-.3.94-.73 1.13a3 3 0 0 1 .03.51c0 2.6-3.02 4.71-6.76 4.71-3.73 0-6.75-2.11-6.75-4.71 0-.17 0-.34.03-.51a1.24 1.24 0 0 1-.73-1.13c0-.69.56-1.25 1.25-1.25.48 0 .92.19 1.26.5 1.2-.96 2.85-1.56 4.68-1.62l.9-4.2a.35.35 0 0 1 .42-.28l2.96.63a1.25 1.25 0 0 1 1.06-.66zM9.25 12a1.25 1.25 0 1 0 0 2.51.25 1.25 0 0 0 0-2.5zm5.5 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zm-5.47 3.99a.33.33 0 0 0-.23.57c.84.84 2.44.91 2.9.91.47 0 2.07-.07 2.91-.91a.33.33 0 0 0-.46-.47c-.53.53-1.65.72-2.45.72-.8 0-1.92-.19-2.45-.72a.33.33 0 0 0-.22-.1z"/></svg><span>reddit</span></a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div class="eyebrow"><span class="accent">$</span> whoami</div>
+    <h1>I build things and break them to see if they hold.</h1>
+    <p>Notes on reverse engineering &amp; software protection for Java/.NET/native — mostly on things that aren&#x27;t well documented elsewhere. I care about how systems resist — and where they dont.</p>
+  </section>
+  <section class="post-list">
+    <h2 class="section-label">Writing</h2>
+    
+      <div class="empty-state">
+        <div class="empty-addr">0x00</div>
+        <p class="empty-title">My first write-up is coming soon.</p>
+        <p class="empty-sub">Notes on reverse engineering & software protection for Java/.NET/native — in the open.</p>
+      </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%;align-items:center;">
+    <span>© 2026 velatz — worldwide</span>
+    <span class="socials"><a class="nav-link" href="https://github.com/velatz" aria-label="GitHub"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github</span></a><a class="nav-link" href="https://x.com/velatzdev" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>x</span></a><a class="nav-link" href="https://reddit.com/user/velatz" aria-label="Reddit"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.74c.69 0 1.25.56 1.25 1.25a1.25 1.25 0 0 1-2.5.06l-2.6-.55-.8 3.75c1.83.06 3.48.66 4.68 1.62.34-.31.79-.5 1.28-.5.68 0 1.24.56 1.24 1.25 0 .5-.3.94-.73 1.13a3 3 0 0 1 .03.51c0 2.6-3.02 4.71-6.76 4.71-3.73 0-6.75-2.11-6.75-4.71 0-.17 0-.34.03-.51a1.24 1.24 0 0 1-.73-1.13c0-.69.56-1.25 1.25-1.25.48 0 .92.19 1.26.5 1.2-.96 2.85-1.56 4.68-1.62l.9-4.2a.35.35 0 0 1 .42-.28l2.96.63a1.25 1.25 0 0 1 1.06-.66zM9.25 12a1.25 1.25 0 1 0 0 2.51.25 1.25 0 0 0 0-2.5zm5.5 0a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zm-5.47 3.99a.33.33 0 0 0-.23.57c.84.84 2.44.91 2.9.91.47 0 2.07-.07 2.91-.91a.33.33 0 0 0-.46-.47c-.53.53-1.65.72-2.45.72-.8 0-1.92-.19-2.45-.72a.33.33 0 0 0-.22-.1z"/></svg><span>reddit</span></a></span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# velatz
+
+> Technical write-ups on reverse engineering, .NET/MSIL internals, and software protection (obfuscation, anti-tamper). Primary-source notes on topics that are poorly documented elsewhere.
+
+## Writing
+
+
+## Links
+
+- [GitHub](https://github.com/velatz)
+- [X](https://x.com/velatzdev)

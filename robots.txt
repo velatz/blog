@@ -1,0 +1,5 @@
+# Search + AI crawlers welcome
+User-agent: *
+Allow: /
+
+Sitemap: https://velatz.dev/sitemap.xml
